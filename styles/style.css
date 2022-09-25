@@ -1,0 +1,57 @@
+nav {
+    /* background-color: rgb(83, 82, 82); */
+}
+
+main {
+    padding: 1rem 0rem;
+}
+
+footer {
+    background-color: rgb(18, 78, 87);
+}
+
+.logo {
+    margin: 10px;
+    width: 120px;
+    height: 70px;
+}
+
+.cardText {
+    font-size: 20px;
+}
+
+.card-img {
+    height: 550px;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.r-card {
+    width: 18rem;
+    margin-bottom: 15px;
+}
+
+.buttonColor,
+.texto {
+    color: white;
+}
+
+.texto {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.r-cardsPerfiles {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+.article {
+    background-color: rgb(73, 72, 72);
+}
+
+.text-form {
+    color: grey;
+    font-size: 14px;
+}
