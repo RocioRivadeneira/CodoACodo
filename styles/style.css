@@ -19,7 +19,7 @@ main > section:last-child {
 }
 
 #banner {
-    background-image: url("../ba1.jpg");
+    background-image: url("../images/ba1.jpg");
     background-position: 50% 40%;
     width: 100%;
     height: 450px;
