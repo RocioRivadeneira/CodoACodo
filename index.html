@@ -287,71 +287,93 @@
                     <h5>Venta</h5>
                     <h2>VALOR DE TICKET $200</h2>
                 </div>
-                <div class="row g-3">
-                    <div class="col-6">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Nombre"
-                            aria-label="First name"
-                        />
-                    </div>
-                    <div class="col-6">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Apellido"
-                            aria-label="Last name"
-                        />
-                    </div>
-                    <div class="col-12">
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Correo"
-                            aria-label="Last name"
-                        />
-                    </div>
-                    <div class="col-6">
-                        <label>Cantidad</label>
-                        <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Cantidad"
-                            aria-label="Last name"
-                        />
-                    </div>
-                    <div class="col-6">
-                        <label>Categoria</label>
-                        <select
-                            type="text"
-                            class="form-control"
-                            placeholder="Cantidad"
-                            aria-label="Last name"
-                        >
-                            <option>Estudiante</option>
-                            <option>Trainee</option>
-                            <option>Junior</option>
-                        </select>
-                    </div>
-                    <div class="col-12">
-                        <div
-                            class="bg-info p-2 text-dark bg-opacity-25 border border-info rounded-1"
-                        >
-                            <span class="text-primary">Total a Pagar: $</span>
+
+                <form id="cotizacion">
+                    <div class="row">
+                        <div class="col">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Nombres"
+                                aria-label="First name"
+                                required
+                            />
+                        </div>
+                        <div class="col">
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder="Apellido"
+                                aria-label="Last name"
+                                required
+                            />
                         </div>
                     </div>
-                    <div class="col-6">
-                        <button class="btn btn-success w-100" type="button">
-                            Borrar
-                        </button>
+                    <div class="col-12 mt-2">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="inputEmail"
+                            placeholder="Correo"
+                            required
+                        />
                     </div>
-                    <div class="col-6">
-                        <button class="btn btn-success w-100" type="button">
-                            Resumen
-                        </button>
+                    <div class="row">
+                        <div class="col-6 mt-2">
+                            <label
+                                for="inputQuantity"
+                                class="form-label Quantity"
+                                >Cantidad</label
+                            >
+                            <input
+                                type="number"
+                                class="form-control"
+                                id="cantidad"
+                                placeholder="Cantidad"
+                            />
+                        </div>
+                        <div class="col-6 mt-2">
+                            <label for="inputState" class="form-label"
+                                >Categoria</label
+                            >
+                            <select id="categorias" class="form-select">
+                                <option selected value="estudiantes">
+                                    Estudiante
+                                </option>
+                                <option value="trainee">Trainee</option>
+                                <option value="junior">Junior</option>
+                            </select>
+                        </div>
+
+                        <div class="col-12 mt-3 mb-2">
+                            <div
+                                class="bg-info p-2 text-dark bg-opacity-25 border border-info rounded-1"
+                            >
+                                <span class="text-primary" id="total"
+                                    >Total a Pagar: $</span
+                                >
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <button
+                                class="btn btn-success w-100"
+                                type=""
+                                id="limpiar"
+                            >
+                                Borrar
+                            </button>
+                        </div>
+                        <div class="col-6">
+                            <button
+                                class="btn btn-success w-100"
+                                type="submit"
+                                id="resumen"
+                            >
+                                Resumen
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </form>
             </section>
         </main>
 
@@ -366,5 +388,6 @@
             <a class="nav-link m-1 p-1" href="#">Privacidad</a>
             <a class="nav-link m-1 p-1" href="#">Estudiantes</a>
         </footer>
+        <script type="text/javascript" src="/JS/factura.js"></script>
     </body>
 </html>
